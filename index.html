@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anurag Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Anurag<span>.</span></a>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Always Choose Good</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident optio nihil nemo corrupti culpa id, alias ratione expedita maxime beatae porro sunt ullam minima, itaque veritatis sed quos. Est, consequuntur.
+            </p>
+            <a href="#" class="btn">Our Menu</a>
+        </div>
+    </section>  
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Me</h2>
+                <p>I started my career with Web Designing then gradually learning I became a Web Developer and I Learned some softwares skills like:  </p>
+                <ul>
+                    <li>Adobe illustrator, </li>
+                    <li>Adobe Photoshop</li>
+                    <li>HTML and CSS, </li>
+                    <li>JavaScript</li>
+                    <li>React Js, </li>
+                    <li>Node Js, </li>
+                    <li>Graphql, </li>
+                    <li>D3 Js</li>
+                </ul>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="images/logo1.png" alt="img"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="menu" id="portfolio">
+        <div class="title">
+            <h2 class="titleText"><span>P</span>ortfolio</h2>
+            <p>These are some of my works.</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/logo4.png"/>
+                </div>
+                <div class="text">
+                    <h3>Logo Designing</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/webpage1.PNG" width="100%"/>
+                </div>
+                <div class="text">
+                    <h3>Web Development</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/daily1.jpg" width="60%"/>
+                </div>
+                <div class="text">
+                    <h3>Daily Art Practice</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="images/poster2.jpg"  width="60%"/>
+                </div>
+                <div class="text">
+                    <h3>Poster Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText">
+                <span>C</span>ontact Us
+            </h2>
+        </div>
+        <div class="contactForm">
+            <h2>Send Message</h2>
+            <div class="inputBox">
+                <input type="text" placeholder="Name"/>
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email"/>
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send"/>
+            </div>
+        </div>
+    </section>
+    <script>
+        window.addEventListener('scroll',function(){
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+    </script>  
+</body>
+</html>
